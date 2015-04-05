@@ -1,0 +1,714 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SuperProcessManager.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\SuperProcessManager.ico"
+IDR_SUPERPTYPE          ICON    DISCARDABLE     "res\\SuperProcessManagerDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_ABOUT_BG            BITMAP  DISCARDABLE     "res\\AbBg.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",               ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件",                    ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "复制(&C)\tCtrl+C",            ID_EDIT_COPY
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM "文本栏(&T)",                  IDM_PUBLIC_TEXT_BAR
+    END
+    POPUP "监视(&M)"
+    BEGIN
+        MENUITEM "运行程序并监视\t(&R)",        IDM_MONITOR_FILE
+    END
+    POPUP "设置(S)"
+    BEGIN
+        MENUITEM "进程网络数据监视设置\t(W)",   IDM_MONITOR_NETWORKIO_SETTING
+
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 SuperProcessManager(&A)...", ID_APP_ABOUT
+    END
+END
+
+IDR_PROCESS_LIST_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "进程报表右键菜单"
+    BEGIN
+        MENUITEM "结束进程(当前选中)\t(&C)",    IDM_TERMINATOR_PROCESS_CUREENT
+
+        MENUITEM "结束进程(复选框选中)\t(&H)",  IDM_TERMINATOR_PROCESS_CHECKBOX
+
+        MENUITEM "结束进程树\t(&T)",            IDM_TERMINATOR_PROCESS_TREE
+        MENUITEM "暂停进程运行\t(&S)",          IDM_SUSPPED_PROCESS
+        MENUITEM SEPARATOR
+        MENUITEM "注入进程\t(&J)",              IDM_INJECT_PROCESS
+        MENUITEM "调试\t(&D)",                  IDM_DEBUG_PROCESS
+        POPUP "优先级设置"
+        BEGIN
+            MENUITEM "实时",                        IDM_SET_PRIORITY_REALTIME
+
+            MENUITEM "高",                          IDM_SET_PRIORITY_HEIGHT
+            MENUITEM "高于标准",                    IDM_SET_PRIORITY_ABOVE_HEIGHT
+
+            MENUITEM "标准",                        IDM_SET_PRIORITY_NORMAL
+            MENUITEM "低于标准",                    IDM_SET_PRIORITY_BELOW_NORMAL
+
+            MENUITEM "低",                          IDM_SET_PRIORITY_IDEL
+        END
+        MENUITEM SEPARATOR
+        POPUP "下级窗口"
+        BEGIN
+            MENUITEM "模块",                        IDM_PROCESS_MODULE
+            MENUITEM "线程",                        IDM_PROCESS_THREAD
+            MENUITEM "句柄",                        IDM_PROCESS_HANDLE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "监视该进程网络数据\t(&N)",    IDM_MONITOR_NETWOKIO
+        MENUITEM "监视该进程文件读写\t(&F)",    IDM_MONITOR_FILEIO
+        MENUITEM "监视该进程注册表读写\t(&R)",  IDM_MONITOR_REGIO
+        MENUITEM "监视该进程所有行为\t(&L)",    IDM_MONITOR_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "定位文件\t(&P)",              IDM_POSITIONING_FILE
+        MENUITEM "文件属性\t(&A)",              IDM_ATTRIBUTE_FILE
+        MENUITEM "谷歌该进程\t(&G)",            IDM_GOOGLE_SEARCH
+        MENUITEM "百度该进程\t(&B)",            IDM_BAIDU_SEARCH
+        MENUITEM "在线病毒扫描\t(&O)",          IDM_ONLINE_VIRUS_SCAN
+    END
+END
+
+IDR_NOTIFYICON_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "托盘右键菜单"
+    BEGIN
+        MENUITEM "显示窗口\t(W)",               IDM_SHOW_WINDOW
+        MENUITEM "窗口置顶\t(&T)",              IDM_TOPMOST
+        MENUITEM "设置\t(S)",                   IDM_SETTING
+        MENUITEM "升级\t(U)",                   IDM_UPDATE
+        MENUITEM "关于\t(&A)",                  IDM_ABOUT
+        MENUITEM "退出\t(&E)",                  IDM_EXIT
+    END
+END
+
+IDR_NETWORK_IO_DATA_LIST_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "数据报表菜单"
+    BEGIN
+        MENUITEM "设置\t(S)",                   IDM_SETTING
+        MENUITEM "运行文件并监视\t(&F)",        IDM_MONITOR_FILE
+        MENUITEM SEPARATOR
+        MENUITEM "过滤器...\t(&O)",             IDM_FILTER
+        MENUITEM SEPARATOR
+        POPUP "进程操作"
+        BEGIN
+            MENUITEM "结束进程\t(&T)",              IDM_TERMENATER_PROCESS
+            MENUITEM "暂停进程\t(&M)",              IDM_SUSPEND_PROCESS
+            MENUITEM "恢复进程\t(&R)",              IDM_RESUME_PROCESS
+        END
+        MENUITEM SEPARATOR
+        POPUP "删除"
+        BEGIN
+            MENUITEM "删除无效数据\t(L)",           IDM_DELETE_INVALID_DATA
+            MENUITEM "删除(复选框选中)\t(&D)",      IDM_DELETE_SELECED
+            MENUITEM "删除(当前选中行)\t(&C)",      IDM_DELETE_CURRENT
+        END
+        POPUP "选择"
+        BEGIN
+            MENUITEM "全选\t(A)",                   IDM_SELECT_ALL
+            MENUITEM "反选\t(&R)",                  IDM_SELECT_REVERSE_ALL
+            MENUITEM "取消选择(全部)\t(&N)",        IDM_CANCEL_ALL
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "访问该IP\t(I)",               IDM_OPEN_IP
+        MENUITEM "访问该域名\t(&D)",            IDM_OPEN_DNS
+        MENUITEM SEPARATOR
+        MENUITEM "百度该IP\t(&P)",              IDM_BAIDU_SEARCH_IP
+        MENUITEM "谷歌该IP\t(&E)",              IDM_GOOGLE_SEARCH_IP
+        MENUITEM SEPARATOR
+        MENUITEM "百度该域名\t(&F)",            IDM_BAIDU_SEARCH_DNS
+        MENUITEM "谷歌该域名\t(&J)",            IDM_GOOGLE_SEARCH_DNS
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 262, 240
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 超级进程管理器"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,0,219,20,20
+    LTEXT           "超级进程管理器 V1.0 版",IDC_STATIC,25,227,89,8,
+                    SS_NOPREFIX
+    LTEXT           "版权火星所有^-^",IDC_STATIC,135,227,61,8
+    DEFPUSHBUTTON   "确定",IDOK,210,223,50,14,WS_GROUP
+    LTEXT           "",IDC_MYSAY,0,0,261,213,SS_NOTIFY
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | SS_SUNKEN,0,215,
+                    261,1
+END
+
+IDD_PROCESS_NETWORKIO_DLG DIALOGEX 0, 0, 541, 236
+STYLE WS_CHILD
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_DATA_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,0,0,540,165
+    EDITTEXT        IDC_HEX_TEXT,190,175,145,50,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL
+    EDITTEXT        IDC_ASCII_TEXT,10,175,145,50,ES_MULTILINE | 
+                    ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_PROCESS_MANAGER_DLG DIALOG DISCARDABLE  0, 0, 576, 241
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_PROCESS_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,0,0,575,240
+END
+
+IDD_PROCESS_FILEIO_DLG DIALOG DISCARDABLE  0, 0, 466, 226
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,0,0,465,225
+END
+
+IDD_PROCESS_REGIO_DLG DIALOG DISCARDABLE  0, 0, 187, 94
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+END
+
+IDD_TEXTBAR_DLG DIALOG DISCARDABLE  0, 0, 496, 16
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    COMBOBOX        IDC_COMBO_ADDRESS,5,2,485,240,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_MONITOR_NETWORKIO_SETTING_DLG DIALOGEX 0, 0, 177, 105
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "进程网络数据监视设置"
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "TCP -API HOOK",IDC_STATIC,5,5,75,80
+    CONTROL         "send",IDC_HOOK_SEND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,22,20,32,10
+    CONTROL         "WSASend",IDC_HOOK_WSASEND,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,22,35,44,10
+    CONTROL         "recv",IDC_HOOK_RECV,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,22,50,32,10
+    CONTROL         "WSARecv",IDC_HOOK_WSARECV,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,22,65,44,10
+    GROUPBOX        "UDP-API HOOK",IDC_STATIC,90,6,80,80
+    CONTROL         "sendto",IDC_HOOK_SENDTO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,107,21,40,10
+    CONTROL         "WSASendTo",IDC_HOOK_WSASENDTO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,107,36,52,10
+    CONTROL         "recvfrom",IDC_HOOK_RECVFROM,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,107,51,48,10
+    CONTROL         "WSARecvFrom",IDC_HOOK_WSARECVFROM,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,107,66,60,10
+    LTEXT           "如果不懂API，请保持默认",IDC_STATIC,5,90,93,8
+    DEFPUSHBUTTON   "应用",IDC_DONE,130,88,38,14
+END
+
+IDD_RUNLOG_DLG DIALOG DISCARDABLE  0, 0, 521, 261
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    LISTBOX         IDC_LOG_LIST,0,0,520,260,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_MONITOR_FILE DIALOGEX 0, 0, 307, 121
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES | WS_EX_TOOLWINDOW
+CAPTION "运行程序并监视其行为"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "程序路径:",IDC_STATIC,6,10,37,8
+    EDITTEXT        IDC_FILE_PATH,44,9,235,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "浏览",IDC_BROWSER_FILE,282,8,21,14
+    LTEXT           "命令参数:",IDC_STATIC,6,29,37,8
+    EDITTEXT        IDC_COMMAN_LINE,44,27,258,13,ES_AUTOHSCROLL
+    LTEXT           "工作目录:",IDC_STATIC,6,48,37,8
+    EDITTEXT        IDC_WORK_DIRECTORY,44,45,234,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "浏览",IDC_BROWSER_DIR,282,45,21,14
+    CONTROL         "隐藏运行",IDC_HIDE_RUN,"Button",BS_AUTORADIOBUTTON,45,
+                    81,48,10
+    CONTROL         "显示运行",IDC_SHOW_RUN,"Button",BS_AUTORADIOBUTTON,100,
+                    81,48,10
+    LTEXT           "所属桌面:",IDC_STATIC,6,65,37,8
+    EDITTEXT        IDC_DESKTOP,44,63,256,13,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,0,96,305,23
+    PUSHBUTTON      "运行并监视",IDC_MONITOR_TAGERT,255,78,45,14
+    GROUPBOX        "",IDC_STATIC,3,0,303,95
+    CONTROL         "监视网络数据",IDC_MONITOR_NETWORKIO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,3,105,64,10
+    CONTROL         "监视文件操作",IDC_MONITOR_FILEIO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,101,105,64,10
+    CONTROL         "监视注册表操作",IDC_MONITOR_REGIO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,199,105,72,10
+    CONTROL         "切换",IDC_SWITCH_NETWORKMONITRO,"Button",
+                    BS_AUTORADIOBUTTON,68,105,32,10
+    CONTROL         "切换",IDC_SWITCH_FILEMONITRO,"Button",
+                    BS_AUTORADIOBUTTON,166,105,32,10
+    CONTROL         "切换",IDC_SWITCH_REGMONITRO,"Button",BS_AUTORADIOBUTTON,
+                    272,105,32,10
+END
+
+IDD_LISTCTRL_FILTER_DLG DIALOGEX 0, 0, 263, 85
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "过滤器"
+FONT 9, "宋体"
+BEGIN
+    COMBOBOX        IDC_COMBO_COLUMN,31,10,121,290,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_RULE,180,10,77,165,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "列:",IDC_STATIC,12,13,13,8
+    LTEXT           "规则:",IDC_STATIC,157,12,21,8
+    EDITTEXT        IDC_PARAMETER_TEXT,30,31,227,12,ES_AUTOHSCROLL
+    LTEXT           "参数:",IDC_STATIC,7,33,21,8
+    PUSHBUTTON      "选中",IDC_OPERATE_SELECT,206,62,21,14
+    PUSHBUTTON      "删除",IDC_OPERATE_DELETE,234,62,21,14
+    GROUPBOX        "操作",IDC_STATIC,200,51,60,30
+    GROUPBOX        "结果",IDC_STATIC,3,51,194,30
+    LTEXT           "",IDC_RESULT_TEXT,7,62,185,13,SS_NOTIFY
+    GROUPBOX        "",IDC_STATIC,3,0,257,47
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "代码狂人\0"
+            VALUE "FileDescription", "SuperProcessManager Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "SuperProcessManager\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2012\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "SuperProcessManager.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "SuperProcessManager 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 233
+    END
+
+    IDD_PROCESS_NETWORKIO_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 534
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 229
+    END
+
+    IDD_PROCESS_MANAGER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 569
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 234
+    END
+
+    IDD_PROCESS_FILEIO_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 459
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 219
+    END
+
+    IDD_PROCESS_REGIO_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_TEXTBAR_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 489
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 9
+    END
+
+    IDD_MONITOR_NETWORKIO_SETTING_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 170
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_RUNLOG_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 514
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 254
+    END
+
+    IDD_MONITOR_FILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+
+    IDD_LISTCTRL_FILTER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 256
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+1                       24      DISCARDABLE     "res\\default1.bin"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "V1.0 R3版本\n超级进程管理器\nSuperP\n\n\nSuperProcessManager.Document\nSuperP Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "超级进程管理器"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+    IDS_PROCESS_NUM         "进程数: 000  "
+    IDS_THREAD_NUM          "线程数: 000  "
+    IDS_CPU_USAGE           "CPU 使用: 00.00% "
+    IDS_PAGEFILE_USAGE      "提交更改: 0000.00M / 0000.00M"
+    IDS_CPU_NUM             "CPU数量:00 "
+    IDS_HANDLE_NUM          "句柄数: 000000"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\SuperProcessManager.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

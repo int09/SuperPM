@@ -1,0 +1,61 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CMHook - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "Z:\Temp\RSP65.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_UNICODE" /D "UNICODE" /D "_USRDLL" /D "CMHOOK_EXPORTS" /FR"Release/" /Fp"Release/CMHook.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\工程计划\CMHook\Common.cpp"
+"D:\工程计划\CMHook\DataManager.cpp"
+"D:\工程计划\CMHook\Hooker.cpp"
+"D:\工程计划\CMHook\HookFileIoApi.cpp"
+"D:\工程计划\CMHook\HookNetworkApi.cpp"
+"D:\工程计划\CMHook\Main.cpp"
+]
+Creating command line "cl.exe @Z:\Temp\RSP65.tmp" 
+Creating temporary file "Z:\Temp\RSP66.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_UNICODE" /D "UNICODE" /D "_USRDLL" /D "CMHOOK_EXPORTS" /FR"Release/" /Fp"Release/CMHook.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\工程计划\CMHook\StdAfx.cpp"
+]
+Creating command line "cl.exe @Z:\Temp\RSP66.tmp" 
+Creating temporary file "Z:\Temp\RSP67.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Release/CMHook.pdb" /machine:I386 /def:".\CMHook.def" /out:"../BIN/CMHook.dll" /implib:"Release/CMHook.lib" 
+".\Release\Common.obj"
+".\Release\DataManager.obj"
+".\Release\Hooker.obj"
+".\Release\HookFileIoApi.obj"
+".\Release\HookNetworkApi.obj"
+".\Release\Main.obj"
+".\Release\StdAfx.obj"
+]
+Creating command line "link.exe @Z:\Temp\RSP67.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+Common.cpp
+DataManager.cpp
+Hooker.cpp
+HookFileIoApi.cpp
+HookNetworkApi.cpp
+Main.cpp
+Generating Code...
+Linking...
+   Creating library Release/CMHook.lib and object Release/CMHook.exp
+Creating command line "bscmake.exe /nologo /o"Release/CMHook.bsc"  ".\Release\StdAfx.sbr" ".\Release\Common.sbr" ".\Release\DataManager.sbr" ".\Release\Hooker.sbr" ".\Release\HookFileIoApi.sbr" ".\Release\HookNetworkApi.sbr" ".\Release\Main.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+CMHook.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

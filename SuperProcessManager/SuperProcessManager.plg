@@ -1,0 +1,132 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SuperProcessManager - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/SuperProcessManager.res" /d "_DEBUG" /d "_AFXDLL" "C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\SuperProcessManager.rc"" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPE516.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "Common" /I "ProcessTool" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_UNICODE" /FR"Debug/" /Fp"Debug/SuperProcessManager.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\CMListCtrlFilterDlg.cpp"
+"C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\MainFrm.cpp"
+"C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\MonitorFileDlg.cpp"
+"C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\MonitorNetworkIoSettingDlg.cpp"
+"C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\ProcessFileIODlg.cpp"
+"C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\ProcessManager.cpp"
+"C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\ProcessNetworkIODlg.cpp"
+"C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\ProcessRegIODlg.cpp"
+"C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\PublicTextBarDlg.cpp"
+"C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\RunlogDlg.cpp"
+"C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\SuperProcessManager.cpp"
+"C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\SuperProcessManagerDoc.cpp"
+"C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\SuperProcessManagerView.cpp"
+"C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\Common\Common.cpp"
+"C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\Common\DataManager.cpp"
+"C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\Common\FileVersion.cpp"
+"C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\Common\HookManager.cpp"
+"C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\Common\MSortListCtrl.cpp"
+"C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\ProcessTool\HandleTool.cpp"
+"C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\ProcessTool\ModuleToo.cpp"
+"C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\ProcessTool\PerformanceTool.cpp"
+"C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\ProcessTool\ProcessTool.cpp"
+"C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\ProcessTool\ThreadTool.cpp"
+"C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\UICommon\CreditStatic.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPE516.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPE517.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "Common" /I "ProcessTool" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_UNICODE" /FR"Debug/" /Fp"Debug/SuperProcessManager.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPE517.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSPE518.tmp" with contents
+[
+/nologo /entry:"wWinMainCRTStartup" /subsystem:windows /incremental:yes /pdb:"Debug/SuperProcessManager.pdb" /debug /machine:I386 /out:"../Bin/SuperProcessManager.exe" /pdbtype:sept 
+".\Debug\CMListCtrlFilterDlg.obj"
+".\Debug\MainFrm.obj"
+".\Debug\MonitorFileDlg.obj"
+".\Debug\MonitorNetworkIoSettingDlg.obj"
+".\Debug\ProcessFileIODlg.obj"
+".\Debug\ProcessManager.obj"
+".\Debug\ProcessNetworkIODlg.obj"
+".\Debug\ProcessRegIODlg.obj"
+".\Debug\PublicTextBarDlg.obj"
+".\Debug\RunlogDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\SuperProcessManager.obj"
+".\Debug\SuperProcessManagerDoc.obj"
+".\Debug\SuperProcessManagerView.obj"
+".\Debug\Common.obj"
+".\Debug\DataManager.obj"
+".\Debug\FileVersion.obj"
+".\Debug\HookManager.obj"
+".\Debug\MSortListCtrl.obj"
+".\Debug\HandleTool.obj"
+".\Debug\ModuleToo.obj"
+".\Debug\PerformanceTool.obj"
+".\Debug\ProcessTool.obj"
+".\Debug\ThreadTool.obj"
+".\Debug\CreditStatic.obj"
+".\Debug\SuperProcessManager.res"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSPE518.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CMListCtrlFilterDlg.cpp
+MainFrm.cpp
+C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\MainFrm.cpp(7) : fatal error C1083: Cannot open include file: 'strsafe.h': No such file or directory
+MonitorFileDlg.cpp
+c:\users\administrator\desktop\超级进程管理器\superprocessmanager\processtool\processtool.h(14) : fatal error C1083: Cannot open include file: 'strsafe.h': No such file or directory
+MonitorNetworkIoSettingDlg.cpp
+ProcessFileIODlg.cpp
+c:\users\administrator\desktop\超级进程管理器\superprocessmanager\processtool\processtool.h(14) : fatal error C1083: Cannot open include file: 'strsafe.h': No such file or directory
+ProcessManager.cpp
+c:\users\administrator\desktop\超级进程管理器\superprocessmanager\processtool\processtool.h(14) : fatal error C1083: Cannot open include file: 'strsafe.h': No such file or directory
+ProcessNetworkIODlg.cpp
+c:\users\administrator\desktop\超级进程管理器\superprocessmanager\processtool\processtool.h(14) : fatal error C1083: Cannot open include file: 'strsafe.h': No such file or directory
+ProcessRegIODlg.cpp
+PublicTextBarDlg.cpp
+C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\PublicTextBarDlg.cpp(7) : fatal error C1083: Cannot open include file: 'strsafe.h': No such file or directory
+RunlogDlg.cpp
+SuperProcessManager.cpp
+c:\users\administrator\desktop\超级进程管理器\superprocessmanager\processtool\processtool.h(14) : fatal error C1083: Cannot open include file: 'strsafe.h': No such file or directory
+SuperProcessManagerDoc.cpp
+SuperProcessManagerView.cpp
+c:\users\administrator\desktop\超级进程管理器\superprocessmanager\processtool\processtool.h(14) : fatal error C1083: Cannot open include file: 'strsafe.h': No such file or directory
+Common.cpp
+C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\Common\Common.cpp(4) : fatal error C1083: Cannot open include file: 'strsafe.H': No such file or directory
+DataManager.cpp
+C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\Common\DataManager.cpp(3) : fatal error C1083: Cannot open include file: 'strsafe.h': No such file or directory
+FileVersion.cpp
+HookManager.cpp
+C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\Common\HookManager.cpp(3) : fatal error C1083: Cannot open include file: 'strsafe.H': No such file or directory
+MSortListCtrl.cpp
+C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\Common\MSortListCtrl.cpp(9) : fatal error C1083: Cannot open include file: 'strsafe.h': No such file or directory
+HandleTool.cpp
+C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\ProcessTool\HandleTool.cpp(3) : fatal error C1083: Cannot open include file: 'strsafe.h': No such file or directory
+ModuleToo.cpp
+Generating Code...
+Compiling...
+PerformanceTool.cpp
+C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\ProcessTool\PerformanceTool.cpp(3) : fatal error C1083: Cannot open include file: 'Psapi.h': No such file or directory
+ProcessTool.cpp
+c:\users\administrator\desktop\超级进程管理器\superprocessmanager\processtool\processtool.h(14) : fatal error C1083: Cannot open include file: 'strsafe.h': No such file or directory
+ThreadTool.cpp
+C:\Users\Administrator\Desktop\超级进程管理器\SuperProcessManager\ProcessTool\ThreadTool.cpp(3) : fatal error C1083: Cannot open include file: 'Psapi.h': No such file or directory
+CreditStatic.cpp
+Generating Code...
+执行 cl.exe 时出错.
+
+
+
+<h3>Results</h3>
+SuperProcessManager.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

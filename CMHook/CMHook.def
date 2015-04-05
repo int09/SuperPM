@@ -1,0 +1,14 @@
+LIBRARY		"CMHOOK"  BASE=268435456 ; 0x0x10000000
+DESCRIPTION "By Coding øÒ»À"
+VERSION 1.0
+STACKSIZE 4194304
+
+EXPORTS
+	ExportProc				@1
+	UnHookNetworkIo			@2
+	HookNetworkIo			@3
+	SelectHookRecord		@4
+	InsertHookRecord		@5
+	UpdateHookRecord		@6
+	DeleteHookRecord		@7
+
